@@ -6,6 +6,6 @@ source ${MYDIR}/../demo.env
 
 #${MYDIR}/startup/cluster.sh
 ${MYDIR}/startup/load_database.sh
-${MYDIR}/startup/push_demo.sh
+#${MYDIR}/startup/push_demo.sh
 
-roachprod status ${CLUSTER}
+#roachprod status ${CLUSTER}
