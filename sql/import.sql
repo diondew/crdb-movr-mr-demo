@@ -2,11 +2,12 @@
 DROP DATABASE IF EXISTS movr_demo;
 CREATE DATABASE movr_demo;
 
+/*
 ALTER DATABASE movr_demo SET PRIMARY REGION = "us-west1";  -- OR
 ALTER DATABASE movr_demo ADD REGION "us-west3";  -- SLC
 ALTER DATABASE movr_demo ADD REGION "us-east4";  -- ASH
 ALTER DATABASE movr_demo ADD REGION "us-east1";  -- SC
-
+*/
 ALTER DATABASE movr_demo SURVIVE REGION FAILURE;
 
 

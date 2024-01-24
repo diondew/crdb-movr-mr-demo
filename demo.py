@@ -26,7 +26,10 @@ from movr.helpers import DemoStats, DemoTimer, run_transaction
 STATS_INTERVAL_SECS = 5
 NUM_UPDATES_PER_RIDE = 5
 
-DB_URI = os.getenv('DB_URI', 'cockroachdb://root@127.0.0.1:26257/movr_demo?application_name=movr_demo')
+DB_URI = os.getenv('DB_URI','cockroachdb://shannon:WS6UqetJ9OANfHcMa6QLTw@roachathon-iot-867.j77.cockroachlabs.cloud:26257/movr_demo?sslmode=verify-full')
+
+
+# os.getenv('DB_URI', 'cockroachdb://root@127.0.0.1:26257/movr_demo?application_name=movr_demo')
 
 
 def demo_flow_once(db_engine: SAEngine, user_ids: list, vehicle_ids: list, op_timer: DemoTimer, stats: DemoStats):
